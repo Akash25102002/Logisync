@@ -57,4 +57,42 @@ module.exports = {
       "title": "Scheduled Departure"
     },
     "scheduled_arrival": {
- 
+      "type": "string",
+      "format": "date-time",
+      "title": "Scheduled Arrival"
+    },
+    "actual_departure": {
+      "type": "string",
+      "format": "date-time",
+      "title": "Actual Departure"
+    },
+    "actual_arrival": {
+      "type": "string",
+      "format": "date-time",
+      "title": "Actual Arrival"
+    },
+    "distance_km": {
+      "type": "number",
+      "title": "Distance (KM)"
+    },
+    "notes": {
+      "type": "string",
+      "title": "Notes"
+    },
+    "customer_name": {
+      "type": "string",
+      "title": "Customer Name"
+    },
+    "customer_phone": {
+      "type": "string",
+      "title": "Customer Phone"
+    }
+  },
+  "required": [
+    "tracking_id",
+    "origin",
+    "destination",
+    "status",
+    "priority"
+  ]
+};
